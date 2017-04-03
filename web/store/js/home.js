@@ -274,3 +274,4 @@ function validate_maintenance(){
     var str = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear() + " " +  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
     document.getElementById('date_maintenance').value = str;
     }
+//
