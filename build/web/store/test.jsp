@@ -610,29 +610,42 @@ li:hover{
 
                 <nav class="icon_box">
                     <ul class="ul_box">
+                    <!--<br><br>
+                        <div>
+                            <div  style="display: inline-block; border: 1px solid black; width: 38%; margin-right: 16%; height: 130px; text-align: center; padding-top: 15%;">Item</div>
+                            <div  style="display: inline-block; border: 1px solid black;  width: 38%; height: 130px; text-align: center; padding-top: 15%;">Search</div>
+                        </div><br><br><br>
+                        <div>
+                            <div  style="display: inline-block; border: 1px solid black; width: 38%; margin-right: 16%; height: 130px; text-align: center; padding-top: 15%;">Daybook</div>
+                            <div  style="display: inline-block; border: 1px solid black;  width: 38%; height: 130px; text-align: center; padding-top: 15%;">Summary</div>
+                        </div><br><br><br>
+                        <div>
+                            <div  style="display: inline-block; border: 1px solid black; width: 38%; margin-right: 16%; height: 130px; text-align: center; padding-top: 15%;">Staff</div>
+                            <div  style="display: inline-block; border: 1px solid black;  width: 38%; height: 130px; text-align: center; padding-top: 15%;">xxxx</div>
+                        </div>-->
                         <table class="table_box">
                             <tr>
                                 <td>
-                                    <li><a href="#item" onclick="box_hide1()">Item</a></li>
+                                    <a href="#item" onclick="box_hide1()">&nbsp;&nbsp;Item&nbsp;&nbsp;</a>
                                 </td>
                                 <td>
-                                    <li><a href="#box2" onclick="box_hide2()">Sear</a></li>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <li><a href="#box3" onclick="box_hide3()">Box3</a></li>
-                                </td>
-                                <td>
-                                    <li><a href="#box4" onclick="box_hide4()">Box4</a></li>
+                                    <li><a href="#box2" onclick="box_hide2()">Search</a></li>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <li><a href="#box5" onclick="box_hide5()">Box5</a></li>
+                                    <li><a href="#box3" onclick="box_hide3()">Daybook</a></li>
                                 </td>
                                 <td>
-                                    <li><a href="#box6" onclick="box_hide6()">Box6</a></li>
+                                    <li><a href="#box4" onclick="box_hide4()">&nbsp;&nbsp;Box4&nbsp;&nbsp;</a></li>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <li><a href="#box5" onclick="box_hide5()">&nbsp;&nbsp;Box5&nbsp;&nbsp;</a></li>
+                                </td>
+                                <td>
+                                    <li><a href="#box6" onclick="box_hide6()">&nbsp;&nbsp;Box6&nbsp;&nbsp;</a></li>
                                 </td>
                             </tr>
                         </table>
@@ -656,6 +669,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio
 
 
 <div id="box_detail1" style="display: none;">
+
     <div class="cart_class" id="add_item" ><div style="margin-top: 30%;"><input type="image" src="images/icons/cart(1).png" width="100%" height="100%" alt="Add Item" data-toggle="modal" data-target="#add_item_popupmenu"></div><div id="add_item_text" style="text-align: center;">Add</div></div>
 
     <div id="update_item" class="cart_class"><div style="margin-top: 30%;"><input type="image" src="images/icons/cart(2).png" width="100%" height="100%" alt="Update Item" data-toggle="modal" data-target="#update_item_popupmenu"></div><div id="add_item_text" style="text-align: center;">Update</div></div>
@@ -1409,86 +1423,738 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio
                     </div>
                 </div>
                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Search with filters -->
+
+<div id="box_detail2" style="display: none; margin-left: 2%">
+asdasd
+
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Maintenance/ Daybook -->
+
+<div id="box_detail3" style="display: none; padding-left: 2%; margin-top: -5%;" onmouseover="validate_maintenance()" >
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-7" style="border: 2px solid grey; border-color: rgb(240,240,240); border-radius: 1.5%">
+        <form>
+                <div class="modal-header" style="text-align: center; font-style: bold; font-size: 27px;">
+                    <div class="modal-title"><span><img src="images/icons/maintenance.png" width="5%" height="6%"> Maintenance/Daybook</span>
+                    </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="box_detail2" style="display: none;">
-    Box2
+                <br>
+                                <div class="form-group ">
+                                    <label for="item_subitem_name" class="col-sm-3 control-label">
+                                        <span style="color:red">*</span> Name</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" required class="form-control" id="item_subitem_name" placeholder="Item/Subitem Name" />
+                                    </div>
+                                </div><br><span style="padding-left: 60%; font-style: italic;"> or</span><br>
+                                <div class="form-group ">
+                                    <label for="invoice_id" class="col-sm-3 control-label">
+                                        <span style="color:red">*</span> Invoice_id</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" required class="form-control" id="invoice_id" placeholder="Invoice-id" />
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="form-group">
+                                    <label for="date_of_bill_scan" class="col-sm-3 control-label">
+                                         Date </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" required class="form-control" id="date_maintenance" name="date_maintenance" placeholder="14-03-17" />
+                                    </div>
+                                </div><br><br>
+                                <div class="form-group " >
+                                    <label for="maintenance_description" class="col-sm-3 control-label">
+                                         Description</label>
+                                    <div class="col-sm-9">
+                                        <textarea class="form-control" rows="5" id="maintenance_description" maxlength="100" style="resize: none; max-height: 75px;"></textarea>
+                                    </div>
+                                </div> <br><br><br><br>
+                                <div class="form-group ">
+                                    <label for="incharge_name" class="col-sm-3 control-label">
+                                        <span style="color:red">*</span> Incharge Name</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" required class="form-control" id="incharge_name" name="incharge_name" placeholder="Scanned By" />
+                                    </div>
+                                </div><br><br>
+                                <div class="form-group ">
+                                    <table class="table">
+    <thead>
+      <tr>
+        <th>Subitem</th>
+        <th>Invoice-ID</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mouse</td>
+        <td>IV-M201</td>
+        <td><input type="text" class="form-control" id="" name="" /></td>
+      </tr>
+      <tr>
+        <td>KBD</td>
+        <td>IV-K101</td>
+        <td><input type="text" class="form-control" id="" name="" /></td>
+      </tr>
+      <tr>
+        <td>Monitor</td>
+        <td>IV-M1</td>
+        <td><input type="text" class="form-control" id="" name="" /></td>
+      </tr>
+    </tbody>
+  </table>
+                                </div>
+                                <input type="submit" value="Submit">
+  
+</form>
 </div>
-<div id="box_detail3" style="display: none;">
-    Box3
+    </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="box_detail4" style="display: none;">
     Box4
 </div>

@@ -3,6 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+/*
+        Form validation of update item is left for both item_yorn 0 and 1
+        Changes are to be made here for both item_yorn 0 and 1
+
+
+
+
+*/
 package com.store.functions;
 
 import com.store.utility.SQLConnection;
@@ -82,7 +90,7 @@ public class Add_item extends HttpServlet {
                     rs = ps.executeQuery();
                     if(rs.next()|| incharge_name=="") {
                         String incharge_name_staff_id;
-                        if(alloted_to == "")    incharge_name_staff_id="";
+                        if(incharge_name == "")    incharge_name_staff_id="";
                         else                    incharge_name_staff_id = rs.getString(1);
                         
                         String query = "INSERT INTO `item` "                                                

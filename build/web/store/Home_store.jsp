@@ -8,273 +8,7 @@
   <script src="js/bootstrap_jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
 
-<script type="text/javascript">
-
-function box_hide1(){
-    document.getElementById('home_box_content').style.display='none';
-    document.getElementById('box_id1').style.display='none';
-    document.getElementById('box_id2').style.display='block';
-    document.getElementById('box_id3').style.display='block';
-    document.getElementById('box_id4').style.display='block';
-    document.getElementById('box_id5').style.display='block';
-    document.getElementById('box_id6').style.display='block';
-    document.getElementById('box_detail1').style.display='block';
-    document.getElementById('box_detail2').style.display='none';
-    document.getElementById('box_detail3').style.display='none';
-    document.getElementById('box_detail4').style.display='none';
-    document.getElementById('box_detail5').style.display='none';
-    document.getElementById('box_detail6').style.display='none';
-}
-function box_hide2(){
-    document.getElementById('home_box_content').style.display='none';
-    document.getElementById('box_id2').style.display='none';
-    document.getElementById('box_id1').style.display='block';
-    document.getElementById('box_id3').style.display='block';
-    document.getElementById('box_id4').style.display='block';
-    document.getElementById('box_id5').style.display='block';
-    document.getElementById('box_id6').style.display='block';
-    document.getElementById('box_detail2').style.display='block';
-    document.getElementById('box_detail1').style.display='none';
-    document.getElementById('box_detail3').style.display='none';
-    document.getElementById('box_detail4').style.display='none';
-    document.getElementById('box_detail5').style.display='none';
-    document.getElementById('box_detail6').style.display='none';
-}
-function box_hide3(){
-    document.getElementById('home_box_content').style.display='none';
-    document.getElementById('box_id3').style.display='none';
-    document.getElementById('box_id2').style.display='block';
-    document.getElementById('box_id1').style.display='block';
-    document.getElementById('box_id4').style.display='block';
-    document.getElementById('box_id5').style.display='block';
-    document.getElementById('box_id6').style.display='block';
-    document.getElementById('box_detail3').style.display='block';
-    document.getElementById('box_detail2').style.display='none';
-    document.getElementById('box_detail1').style.display='none';
-    document.getElementById('box_detail4').style.display='none';
-    document.getElementById('box_detail5').style.display='none';
-    document.getElementById('box_detail6').style.display='none';
-}
-function box_hide4(){
-    document.getElementById('home_box_content').style.display='none';
-    document.getElementById('box_id4').style.display='none';
-    document.getElementById('box_id2').style.display='block';
-    document.getElementById('box_id3').style.display='block';
-    document.getElementById('box_id1').style.display='block';
-    document.getElementById('box_id5').style.display='block';
-    document.getElementById('box_id6').style.display='block';
-    document.getElementById('box_detail4').style.display='block';
-    document.getElementById('box_detail2').style.display='none';
-    document.getElementById('box_detail3').style.display='none';
-    document.getElementById('box_detail1').style.display='none';
-    document.getElementById('box_detail5').style.display='none';
-    document.getElementById('box_detail6').style.display='none';
-}
-function box_hide5(){
-    document.getElementById('home_box_content').style.display='none';
-    document.getElementById('box_id5').style.display='none';
-    document.getElementById('box_id2').style.display='block';
-    document.getElementById('box_id3').style.display='block';
-    document.getElementById('box_id4').style.display='block';
-    document.getElementById('box_id1').style.display='block';
-    document.getElementById('box_id6').style.display='block';
-    document.getElementById('box_detail5').style.display='block';
-    document.getElementById('box_detail2').style.display='none';
-    document.getElementById('box_detail3').style.display='none';
-    document.getElementById('box_detail4').style.display='none';
-    document.getElementById('box_detail1').style.display='none';
-    document.getElementById('box_detail6').style.display='none';
-}
-function box_hide6(){
-    document.getElementById('home_box_content').style.display='none';
-    document.getElementById('box_id6').style.display='none';
-    document.getElementById('box_id2').style.display='block';
-    document.getElementById('box_id3').style.display='block';
-    document.getElementById('box_id4').style.display='block';
-    document.getElementById('box_id5').style.display='block';
-    document.getElementById('box_id1').style.display='block';
-    document.getElementById('box_detail6').style.display='block';
-    document.getElementById('box_detail2').style.display='none';
-    document.getElementById('box_detail3').style.display='none';
-    document.getElementById('box_detail4').style.display='none';
-    document.getElementById('box_detail5').style.display='none';
-    document.getElementById('box_detail1').style.display='none';
-}
-function home_sidenav(){
-    document.getElementById('home_box_content').style.display='block';
-    document.getElementById('box_id1').style.display='none';
-    document.getElementById('box_id2').style.display='none';
-    document.getElementById('box_id3').style.display='none';
-    document.getElementById('box_id4').style.display='none';
-    document.getElementById('box_id5').style.display='none';
-    document.getElementById('box_id6').style.display='none';
-    document.getElementById('box_detail1').style.display='none';
-    document.getElementById('box_detail2').style.display='none';
-    document.getElementById('box_detail3').style.display='none';
-    document.getElementById('box_detail4').style.display='none';
-    document.getElementById('box_detail5').style.display='none';
-    document.getElementById('box_detail6').style.display='none';
-}
-
-function show_more(){
-    if(document.getElementById("r1").checked == true){
-        document.getElementById("item_only_1").style.display='none';
-        document.getElementById("item_only_2").style.display='none';
-        document.getElementById("item_only_3").style.display='none';
-        document.getElementById("item_only_4").style.display='none';
-        document.getElementById("item_only_5").style.display='none';
-        document.getElementById("item_only_6").style.display='none';
-        document.getElementById("item_only_7").style.display='none';
-        document.getElementById("subitem_1").style.display='block';
-    }
-    else if(document.getElementById("r2").checked == true){
-        document.getElementById("item_only_1").style.display='block';
-        document.getElementById("item_only_2").style.display='block';
-        document.getElementById("item_only_3").style.display='block';
-        document.getElementById("item_only_4").style.display='block';
-        document.getElementById("item_only_5").style.display='block';
-        document.getElementById("item_only_6").style.display='block';
-        document.getElementById("item_only_7").style.display='block';
-        document.getElementById("subitem_1").style.display='none';
-    }
-}
-
-function updateItemFunction(){
-        if(document.getElementById("update_item_name").value != ""){
-            document.getElementById("update_field2").style.display='block';
-            document.getElementById("update_field3").style.display='block';
-            document.getElementById("update_field4").style.display='block';
-            document.getElementById("update_field5").style.display='block';
-            document.getElementById("update_field6").style.display='block';
-            document.getElementById("update_field7").style.display='block';
-            document.getElementById("update_field8").style.display='block';
-            document.getElementById("update_field9").style.display='block';
-            document.getElementById("update_field10").style.display='block';
-            document.getElementById("update_field11").style.display='block';
-        }
-
-        else{
-            document.getElementById("update_field2").style.display='none';
-            document.getElementById("update_field3").style.display='none';
-            document.getElementById("update_field4").style.display='none';
-            document.getElementById("update_field5").style.display='none';
-            document.getElementById("update_field6").style.display='none';
-            document.getElementById("update_field7").style.display='none';
-            document.getElementById("update_field8").style.display='none';
-            document.getElementById("update_field9").style.display='none';
-            document.getElementById("update_field10").style.display='none';
-            document.getElementById("update_field11").style.display='none';
-        }
-}
-
-function updateSubItemFunction(){
-        if(document.getElementById("update_sub-item_sub-name").value != ""){
-            document.getElementById("update_sub-item_field1").style.display='block';
-            document.getElementById("update_sub-item_field3").style.display='block';
-            document.getElementById("update_sub-item_field4").style.display='block';
-            document.getElementById("update_sub-item_field5").style.display='block';
-            document.getElementById("update_sub-item_field6").style.display='block';
-            document.getElementById("update_sub-item_field7").style.display='block';
-            document.getElementById("update_sub-item_field8").style.display='block';
-            document.getElementById("update_sub-item_field9").style.display='block';
-        }
-
-        else{
-            document.getElementById("update_sub-item_field1").style.display='none';
-            document.getElementById("update_sub-item_field3").style.display='none';
-            document.getElementById("update_sub-item_field4").style.display='none';
-            document.getElementById("update_sub-item_field5").style.display='none';
-            document.getElementById("update_sub-item_field6").style.display='none';
-            document.getElementById("update_sub-item_field7").style.display='none';
-            document.getElementById("update_sub-item_field8").style.display='none';
-            document.getElementById("update_sub-item_field9").style.display='none';
-                    
-        }
-}
-function validate_add_item_form() {   
-
-    var flag=0;
-    var radio_check=0;
-    var button = document.getElementById('compose_item');
-
-    if((document.getElementById('item_name').value!="") &&
-       (document.getElementById('order_date').value!="") &&
-       (document.getElementById('supplier_name').value!="") &&
-       (document.getElementById('rate').value!="") &&
-       (document.getElementById('quantity').value!="") &&
-       (document.getElementById('tax').value!="")){
-            if(document.getElementById("r1").checked == true){  flag = 1;   radio_check = 1; }
-
-
-            else if(document.getElementById("r2").checked == true){
-                radio_check = 0;
-                button.disabled = true;
-                button.style.cursor = "not-allowed";
-                if( (document.getElementById('manufacturer_name').value!="") &&
-                (document.getElementById('invoice_id').value!="") &&
-                (document.getElementById('alloted_to').value!="") &&
-                (document.getElementById('placed_at').value!="") &&
-                (document.getElementById('incharge_name').value!="")  ){
-                flag = 1;
-                radio_check = 2;
-                }
-                else{ flag = 0; radio_check = 0; }
-            
-            }
-        }
-    
-    if(flag==1 && (radio_check == 1 || radio_check == 2)) {
-        button.disabled = false;
-        button.style.cursor = "initial";
-    }
-}
-
-function validate_add_sub_item_form(){
-
-    var flag=0;
-    var button = document.getElementById('compose_sub_item');
-    
-    if((document.getElementById('sub_item_name').value!="") &&
-       (document.getElementById('sub_item_sub_name').value!="") &&
-       (document.getElementById('sub_item_manufacturer_name').value!="") &&
-       (document.getElementById('sub_item_invoice_id').value!="") &&
-       (document.getElementById('sub_item_alloted_to').value!="") &&
-       (document.getElementById('sub_item_placed_at').value!="") &&
-       (document.getElementById('sub_item_incharge_name').value!="") ){
-
-            flag=1;
-    }
-    else    flag=0;
-
-    if(flag==1) {
-        button.disabled = false;
-        button.style.cursor = "initial";
-    }
-    else if(flag==0){
-        button.disabled = true;
-        button.style.cursor = "not-allowed";    
-    }
-}
-
-function validate_scan_bills_form(){
-    var date = new Date();
-    var str = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear() + " " +  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-    document.getElementById('date_of_bill_scan').value = str;
-    document.getElementById('year_bill_scan_folder').value = date.getFullYear();
-    document.getElementById('month_bill_scan_folder').value = date.getMonth() + 1;
-    var button = document.getElementById('submit_scan_item');
-    if((document.getElementById('bill_name').value != "") &&
-        (document.getElementById('date_of_bill_scan').value != "") &&
-        (document.getElementById('from_bill').value != "") &&
-        (document.getElementById('to_bill').value != "") &&
-        (document.getElementById('image_name').value != "") &&
-        (document.getElementById('scanned_by').value != "")){
-            button.disabled = false;
-            button.style.cursor = "initial";
-    }    
-}
-</script>
-
+ <script src="js/home.js"></script> 
 
 </head>
 
@@ -822,7 +556,7 @@ li:hover{
                     <a href="#box1" id="box_id1" onclick="box_hide1()" style="display: none;">Item</a>
                 </li>
                 <li>
-                    <a href="#box2" id="box_id2" onclick="box_hide2()" style="display: none;">Box2</a>
+                    <a href="#box2" id="box_id2" onclick="box_hide2()" style="display: none;">Search</a>
                 </li>
                 <li>
                     <a href="#box3" id="box_id3" onclick="box_hide3()" style="display: none;">Box3</a>
@@ -882,7 +616,7 @@ li:hover{
                                     <li><a href="#item" onclick="box_hide1()">Item</a></li>
                                 </td>
                                 <td>
-                                    <li><a href="#box2" onclick="box_hide2()">Box2</a></li>
+                                    <li><a href="#box2" onclick="box_hide2()">Sear</a></li>
                                 </td>
                             </tr>
                             <tr>
@@ -1307,38 +1041,21 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio
                             <li><a href="#update_sub-item_pane" data-toggle="tab">Update Sub-Item</a></li>
                         </ul>
                         <!-- Tab panes -->
-                        <div class="tab-content">
+                        <div class="tab-content" onmouseover="validate_update_item_form()">
                             <div class="tab-pane active" id="update_item_pane">
-                                <form role="form" class="form-horizontal">
-                                <!--<div class="form-group">
-                                    <label for="email" class="col-sm-2 control-label">
-                                        Name</label>
-                                    <div class="col-sm-10">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <select class="form-control">
-                                                    <option>Mr.</option>
-                                                    <option>Ms.</option>
-                                                    <option>Mrs.</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-9">
-                                                <input type="text" class="form-control" placeholder="Name" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>-->
+                                <form role="form" action="../Update_item" class="form-horizontal" >
+                                
                                 <div class="form-group" id="update_field1">
                                     <label for="update_item_name" class="col-sm-3 control-label">
                                         <span style="color:red">*</span> Item Name</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="update_item_name" placeholder="Item Name" onblur="updateItemFunction()"/>
+                                        <input type="text" required class="form-control" id="update_item_name" name="update_item_name" placeholder="Item Name" onblur="updateItemFunction()"/>
                                     </div>
                                 </div>
-                                <div id="item_update_show_more"></div>
+                                <div id="item_update_show_more" ></div>
                                 
                                     <div class="modal-footer">
-                                    <button type="submit" id="update_compose_item" name="update_compose_item" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-ok-circle"></span> Update-Item</button>
+                                    <button type="submit" id="update_compose_item" name="update_compose_item" class="btn btn-primary pull-right" ><span class="glyphicon glyphicon-ok-circle"></span> Update-Item</button>
                                     </form>
                                     <button type="submit"  class="btn btn-danger pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove-circle"></span> Cancel</button>
 
@@ -1350,88 +1067,18 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio
 
 
                             <div class="tab-pane" id="update_sub-item_pane">
-                                <form role="form" class="form-horizontal">
-                                <!--<div class="form-group">
-                                    <label for="email" class="col-sm-2 control-label">
-                                        Name</label>
-                                    <div class="col-sm-10">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <select class="form-control">
-                                                    <option>Mr.</option>
-                                                    <option>Ms.</option>
-                                                    <option>Mrs.</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-9">
-                                                <input type="text" class="form-control" placeholder="Name" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>-->
-                                <div class="form-group" style="display: none;" id="update_sub-item_field1" >
-                                    <label for="update_sub-item_name" class="col-sm-4 control-label">
-                                        <span style="color:red">*</span> Item Name</label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="update_sub-item_name" value="Dummy-Item-Name" disabled placeholder="Item Name" />
-                                    </div>
-                                </div>
+                                <form role="form" class="form-horizontal" action="../Update_subitem"> 
+                                
                                 <div class="form-group" id="update_sub-item_field2" >
                                     <label for="update_sub-item_sub-name" class="col-sm-4 control-label">
                                         <span style="color:red">*</span>Sub-Item Name</label>
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="update_sub-item_sub-name" onblur="updateSubItemFunction()" placeholder="Sub-Item Name" />
+                                        <input type="text" class="form-control" required id="update_sub-item_sub-name" name="update_sub-item_sub-name" onblur="updateSubItemFunction()" placeholder="Sub-Item Name" />
                                     </div>
                                 </div>
-                                <div class="form-group " style="display: none;" id="update_sub-item_field3" >
-                                    <label for="update_sub-item_manufacturer_name" class="col-sm-4 control-label">
-                                        <span style="color:red">*</span> Manufacturer Name</label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="update_sub-item_manufacturer_name" value="Dummy-manufacturer name" disabled placeholder="Manufacturer Name" />
-                                    </div>
-                                </div>
-                                <div class="form-group " style="display: none;" id="update_sub-item_field4" >
-                                    <label for="update_sub-item_invoice_id" class="col-sm-4 control-label">
-                                        <span style="color:red">*</span> Invoice-id</label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="update_sub-item_invoice_id" value="Dummy-Invoice-ID" disabled placeholder="Invoice-id" />
-                                    </div>
-                                </div>
-                                <div class="form-group " style="display: none;" id="update_sub-item_field5" >
-                                    <label for="update_sub-item_description" class="col-sm-4 control-label">
-                                        Sub-Item Description</label>
-                                    <div class="col-sm-8">
-                                        <textarea class="form-control" rows="5" id="update_sub-item_description" maxlength="100" style="resize: none; max-height: 75px;">This is the dummy description of mouse.&#13;&#10; Type: Optical, USB</textarea>
-                                    </div>
-                                </div>
-                                <div class="form-group " style="display: none;" id="update_sub-item_field6" >
-                                    <label for="update_sub-item_alloted_to" class="col-sm-4 control-label">
-                                        <span style="color:red">*</span> Alloted To</label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="update_sub-item_alloted_to" value="Dummy-name" placeholder="Alloted To" />
-                                    </div>
-                                </div>
-                                <div class="form-group " style="display: none;" id="update_sub-item_field7" >
-                                    <label for="update_sub-item_placed-at" class="col-sm-4 control-label">
-                                        <span style="color:red">*</span> Position/Placed At</label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="update_sub-item_placed-at" value="Dummy-place" placeholder="Placed At" />
-                                    </div>
-                                </div>
-                                <div class="form-group " style="display: none;" id="update_sub-item_field8" >
-                                    <label for="update_sub-item_incharge_name" class="col-sm-4 control-label">
-                                        <span style="color:red">*</span> Incharge Name</label>
-                                    <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="update_sub-item_incharge_name" value="Dummy-name" placeholder="Incharge Name" />
-                                    </div>
-                                </div>
-                                <div class="form-group " style="display: none;" id="update_sub-item_field9" >
-                                    <label for="update_sub-item_remarks" class="col-sm-4 control-label">
-                                        Remarks(If any)</label>
-                                    <div class="col-sm-8">
-                                        <textarea class="form-control" rows="5" id="update_sub-item_remarks" maxlength="100" style="resize: none; max-height: 75px;">The dummy remarks can be anything related to previous repairs.</textarea>
-                                    </div>
-                                </div>
+                                
+                                    <div id="subitem_update_show_more" ></div>
+                                    
                                     <div class="modal-footer">
                                     <button type="submit" id="compose_sub_item" name="compose_sub_item" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-ok-circle"></span> Update-SubItem</button>
                                     </form>
@@ -1894,6 +1541,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio
         x = $(this).val();
         $.post("ajaxPageUpdateData.jsp", {item_id: x}, function(result) {
             $("#item_update_show_more").html(result);
+        });
+    });
+    
+    $("#update_sub-item_sub-name").blur(function () {
+        x = $(this).val();
+        $.post("ajaxPageUpdateDatasubitem.jsp", {subitem_id: x}, function(result) {
+            $("#subitem_update_show_more").html(result);
         });
     });
     </script>
