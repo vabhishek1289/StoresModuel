@@ -1409,7 +1409,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio
                     </div>
                 </div>
                  
-                </div>
 
 
 
@@ -1482,10 +1481,78 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio
 
 
 
+<!-- Search -->
+<div id="box_detail2" style="display: none; padding-left: 2%; margin-right: 2%;" >
+    
+    <div class="col-sm-12" style="border: 2px solid grey; border-color: rgb(240,240,240); border-radius: 1.5%; display: inline-block">
+        
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Item/Subitem Name</th>
+            <th>Invoice-ID</th>
+            <th>Date</th>
+            <th>Alloted-To</th>
+            <th>Staff Incharge</th>
+            <th>Maintenance Date</th>
+            <th>Position/Placed At</th>
+            <th></th>
 
-<div id="box_detail2" style="display: none;">
-    Box2
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" class="form-control" id="item_input" name="item_input" placeholder="Item/Subitem" onkeydown="validate_search()"/></td>
+            <td><input type="text" class="form-control" id="invoice_input" name="invoice_input" placeholder="Invoice-ID" onkeydown="validate_search()" /></td>
+            <td><input type="date" class="form-control" id="date_input" name="date_input" placeholder="xx/xx/xxxx" onkeydown="validate_search()" /></td>
+            <td><input type="text" class="form-control" id="alloted_input" name="alloted_input" placeholder="Alloted-To" onkeydown="validate_search()" /></td>
+            <td><input type="text" class="form-control" id="incharge_input" name="incharge_input" placeholder="Incharge" onkeydown="validate_search()" /></td>
+            <td><input type="date" class="form-control" id="maintenance_input" name="maintenance_input" placeholder="xx/xx/xxxx" onkeydown="validate_search()" /></td>
+            <td><input type="text" class="form-control" id="position_input" name="position_input" placeholder="Placed-At" onkeydown="validate_search()" /></td>
+
+          </tr>           
+        </tbody>
+    </table>
+    </div><br><br><br><br><br><br>
+    <button type="button" id="search" class="btn btn-primary" style="float: right; margin-right: 50%; font-size: 2em"><span class="glyphicon glyphicon-search"></span> Search</button>
+    <br><br><br><br>
+    <div id="all_search_populate">
+        
+    </div>
+    
+    <!-- <div id="item_search_populate">
+        
+    </div>
+    
+    <div id="invoice_search_populate">
+        
+    </div>
+    
+    <div id="date_search_populate">
+        
+    </div>
+    
+    <div id="alloted_to_search_populate">
+        
+    </div>
+    
+    <div id="incharge_search_populate">
+        
+    </div>
+    
+    <div id="maintenance_date_search_populate">
+        
+    </div>
+    
+    <div id="position_search_populate">
+    
+</div> -->
+
+
 </div>
+
+
+
 <div id="box_detail3" style="display: none;">
     Box3
 </div>
@@ -1550,6 +1617,58 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio
             $("#subitem_update_show_more").html(result);
         });
     });
+    
+     $("#box_detail2").ready(function () {
+        x = "overall_search";
+        y = "overall_search";
+        $.post("ajaxPageSearch.jsp", {query_on: x, type: y}, function(result) {
+            $("#all_search_populate").html(result);
+        });
+    });
+    
+    $("#search").click(function () {
+        item_input = $("#item_input").val();
+        invoice_input = $("#invoice_input").val();
+        date_input = $("#date_input").val();
+        alloted_input = $("#alloted_input").val();
+        incharge_input = $("#incharge_input").val();
+        maintenance_input = $("#maintenance_input").val();
+        position_input = $("#position_input").val();
+        x = "";
+        if(item_input != ""){
+            x = item_input;
+            y = "item_subitem";
+        }else if(invoice_input != ""){
+            x = invoice_input;
+            y = "invoice";
+        }else if(date_input != ""){
+            x = date_input;
+            y = "date";
+        }else if(alloted_input != ""){
+            x = alloted_input;
+            y = "alloted";
+        }else if(incharge_input != ""){
+            x = incharge_input;
+            y = "incharge";
+        }else if(maintenance_input != ""){
+            x = maintenance_input;
+            y = "maintenance_date";
+        }else if(position_input != ""){
+            x = position_input;
+            y = "position";
+        }
+        else{
+            x = "overall_search";
+            y = "overall_search";
+        }
+        $.post("ajaxPageSearch.jsp", {query_on: x, type: y}, function(result) {
+        $("#all_search_populate").html(result);//$("#position_search_populate").html(result);
+        });
+
+        
+        
+    });
+    
     </script>
 
 

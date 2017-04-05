@@ -274,4 +274,71 @@ function validate_maintenance(){
     var str = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear() + " " +  date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
     document.getElementById('date_maintenance').value = str;
     }
-//
+
+
+function validate_search(){
+        var item_input = document.getElementById('item_input').value;
+        var invoice_input = document.getElementById('invoice_input').value;
+        var date_input = document.getElementById('date_input').value;
+        var alloted_input = document.getElementById('alloted_input').value;
+        var incharge_input = document.getElementById('incharge_input').value;
+        var maintenance_input = document.getElementById('maintenance_input').value;
+        var position_input = document.getElementById('position_input').value;
+        
+        if(item_input != ""){
+            document.getElementById('invoice_input').value = "";
+            document.getElementById('date_input').value = "";
+            document.getElementById('alloted_input').value = "";
+            document.getElementById('incharge_input').value = "";
+            document.getElementById('maintenance_input').value = "";
+            document.getElementById('position_input').value = "";       
+        }
+        if(invoice_input != ""){
+            document.getElementById('item_input').value = "";
+            document.getElementById('date_input').value = "";
+            document.getElementById('alloted_input').value = "";
+            document.getElementById('incharge_input').value = "";
+            document.getElementById('maintenance_input').value = "";
+            document.getElementById('position_input').value = "";       
+        }
+        if(alloted_input != ""){
+            document.getElementById('item_input').value = "";
+            document.getElementById('date_input').value = "";
+            document.getElementById('invoice_input').value = "";
+            document.getElementById('incharge_input').value = "";
+            document.getElementById('maintenance_input').value = "";
+            document.getElementById('position_input').value = "";       
+        }
+        if(date_input != ""){
+            document.getElementById('item_input').value = "";
+            document.getElementById('incharge_input').value = "";
+            document.getElementById('invoice_input').value = "";
+            document.getElementById('alloted_input').value = "";
+            document.getElementById('maintenance_input').value = "";
+            document.getElementById('position_input').value = "";       
+        }
+        if(incharge_input != ""){
+            document.getElementById('item_input').value = "";
+            document.getElementById('date_input').value = "";
+            document.getElementById('invoice_input').value = "";
+            document.getElementById('alloted_input').value = "";
+            document.getElementById('maintenance_input').value = "";
+            document.getElementById('position_input').value = "";       
+        }
+        if(maintenance_input != ""){
+            document.getElementById('item_input').value = "";
+            document.getElementById('date_input').value = "";
+            document.getElementById('invoice_input').value = "";
+            document.getElementById('alloted_input').value = "";
+            document.getElementById('incharge_input').value = "";
+            document.getElementById('position_input').value = "";       
+        }
+        if(position_input != ""){
+            document.getElementById('item_input').value = "";
+            document.getElementById('date_input').value = "";
+            document.getElementById('invoice_input').value = "";
+            document.getElementById('alloted_input').value = "";
+            document.getElementById('incharge_input').value = "";
+            document.getElementById('maintenance_input').value = "";       
+        }
+}
