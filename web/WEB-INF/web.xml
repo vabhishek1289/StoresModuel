@@ -36,6 +36,18 @@
         <servlet-name>Update_subitem</servlet-name>
         <servlet-class>com.store.functions.Update_subitem</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>maintenance</servlet-name>
+        <servlet-class>com.store.functions.maintenance</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Maintenance_item_subitem</servlet-name>
+        <servlet-class>com.store.functions.Maintenance_item_subitem</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>m</servlet-name>
+        <servlet-class>com.store.functions.m</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login_store</servlet-name>
         <url-pattern>/Login_store</url-pattern>
@@ -71,6 +83,18 @@
     <servlet-mapping>
         <servlet-name>Update_subitem</servlet-name>
         <url-pattern>/Update_subitem</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>maintenance</servlet-name>
+        <url-pattern>/maintenance</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Maintenance_item_subitem</servlet-name>
+        <url-pattern>/Maintenance_item_subitem</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>m</servlet-name>
+        <url-pattern>/m</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -1862,49 +1862,8 @@ asdasd
                                         <input type="text" required class="form-control" id="date_maintenance" name="date_maintenance" placeholder="14-03-17" />
                                     </div>
                                 </div><br><br>
-                                <div class="form-group " >
-                                    <label for="maintenance_description" class="col-sm-3 control-label">
-                                         Description</label>
-                                    <div class="col-sm-9">
-                                        <textarea class="form-control" rows="5" id="maintenance_description" maxlength="100" style="resize: none; max-height: 75px;"></textarea>
-                                    </div>
-                                </div> <br><br><br><br>
-                                <div class="form-group ">
-                                    <label for="incharge_name" class="col-sm-3 control-label">
-                                        <span style="color:red">*</span> Incharge Name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" required class="form-control" id="incharge_name" name="incharge_name" placeholder="Scanned By" />
-                                    </div>
-                                </div><br><br>
-                                <div class="form-group ">
-                                    <table class="table">
-    <thead>
-      <tr>
-        <th>Subitem</th>
-        <th>Invoice-ID</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Mouse</td>
-        <td>IV-M201</td>
-        <td><input type="text" class="form-control" id="" name="" /></td>
-      </tr>
-      <tr>
-        <td>KBD</td>
-        <td>IV-K101</td>
-        <td><input type="text" class="form-control" id="" name="" /></td>
-      </tr>
-      <tr>
-        <td>Monitor</td>
-        <td>IV-M1</td>
-        <td><input type="text" class="form-control" id="" name="" /></td>
-      </tr>
-    </tbody>
-  </table>
-                                </div>
-                                <input type="submit" value="Submit">
+                                <div id="maintenance_show_more"></div>
+                                <br><br><button type="button" id="search" class="btn btn-primary" style="float: right; margin-right: 2.5%; font-size: 1em"><span class="glyphicon glyphicon-search"></span> Search</button><br><br><br>
   
 </form>
 </div>

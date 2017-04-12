@@ -19,7 +19,8 @@ body {
 }
 
 #mainNav{
-    background-color: rgb(100,100,100);
+    background-color: #4da6ff;
+
 }
 
 li {
@@ -93,7 +94,7 @@ li:hover{
     height: 100%;
     margin-left: -250px;
     overflow-y: auto;
-    background: #04B173;
+    background: #4da6ff;
     transition: all 0.5s ease;
 }
 
@@ -193,7 +194,7 @@ li:hover{
 
 #menu-toggle{
     position: fixed;
-    background-color:#04B173;
+    background-color: #4da6ff;
     color: white;
     width: 45px;
     height: 50px;
@@ -559,18 +560,18 @@ li:hover{
                     <a href="#box2" id="box_id2" onclick="box_hide2()" style="display: none;">Search</a>
                 </li>
                 <li>
-                    <a href="#box3" id="box_id3" onclick="box_hide3()" style="display: none;">Box3</a>
+                    <a href="#box3" id="box_id3" onclick="box_hide3()" style="display: none;">Maintenance</a>
                 </li>
                 <li>
-                    <a href="#box4" id="box_id4" onclick="box_hide4()" style="display: none;">Box4</a>
+                    <a href="#box4" id="box_id4" onclick="box_hide4()" style="display: none;">Monthly Status</a>
                 </li>
                 <li>
-                    <a href="#box5" id="box_id5" onclick="box_hide5()" style="display: none;">Box5</a>
+                    <a href="#box5" id="box_id5" onclick="box_hide5()" style="display: none;">User Profile</a>
                 </li>
                 <li>
                     <a href="#box6" id="box_id6" onclick="box_hide6()" style="display: none;">Box6</a>
                 </li>
-                <li>
+                <!--<li>
                     <a href="#2">Shortcuts</a>
                 </li>
                 <li>
@@ -587,7 +588,7 @@ li:hover{
                 </li>
                 <li>
                     <a href="#7">Contact</a>
-                </li>
+                </li>-->
                 
                 
             </ul>
@@ -616,20 +617,20 @@ li:hover{
                                     <li><a href="#item" onclick="box_hide1()">Item</a></li>
                                 </td>
                                 <td>
-                                    <li><a href="#box2" onclick="box_hide2()">Sear</a></li>
+                                    <li><a href="#box2" onclick="box_hide2()">Find</a></li>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <li><a href="#box3" onclick="box_hide3()">Box3</a></li>
+                                    <li><a href="#box3" onclick="box_hide3()">Main&nbsp;</a></li>
                                 </td>
                                 <td>
-                                    <li><a href="#box4" onclick="box_hide4()">Box4</a></li>
+                                    <li><a href="#box4" onclick="box_hide4()">Stats</a></li>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <li><a href="#box5" onclick="box_hide5()">Box5</a></li>
+                                    <li><a href="#box5" onclick="box_hide5()">User</a></li>
                                 </td>
                                 <td>
                                     <li><a href="#box6" onclick="box_hide6()">Box6</a></li>
@@ -643,12 +644,12 @@ li:hover{
             <div class="col-sm-6" >
                         <h1>Welcome...</h1>
 
-<h3>Lorem ipsum dolor sit amet Riopsh</h3>
+<h3>!! Store Management Module !!</h3>
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This module basically deals with the various management related to department staff. 
 <br><br><br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
-<br><br><br><br><br><br><br><br><br><br><br>&copy All rights reserved.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+Basically handling all the jobs related to the addition of items, search, update, and also the efficient utilzation and tracking of resources, and their maintenance tracking. 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&copy All rights reserved.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
         </div>
 
@@ -1553,11 +1554,82 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio
 
 
 
-<div id="box_detail3" style="display: none;">
-    Box3
+<div id="box_detail3" style="display: none; padding-left: 2%; margin-top: -5%;" onmouseover="validate_maintenance()" >
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-7" style="border: 2px solid grey; border-color: rgb(240,240,240); border-radius: 1.5%">
+        <form action="../m">
+                <div class="modal-header" style="text-align: center; font-style: bold; font-size: 27px;">
+                    <div class="modal-title"><span><img src="images/icons/maintenance.png" width="5%" height="6%"> Maintenance/Daybook</span>
+                    </div>
+                </div>
+                <br>
+                                <div class="form-group ">
+                                    <label for="item_subitem_name" class="col-sm-3 control-label">
+                                        <span style="color:red">*</span> Name</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" required class="form-control" id="maintenance_item_subitem_name" name="q1" placeholder="Item/Subitem Name" />
+                                    </div>
+                                </div><br><!--<span style="padding-left: 60%; font-style: italic;"> or</span>--><br>
+                                <div class="form-group ">
+                                    <label for="invoice_id" class="col-sm-3 control-label">
+                                        <span style="color:red">*</span> Invoice_id</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" required class="form-control" id="maintenance_invoice_id" name="q2" placeholder="Invoice-id" />
+                                    </div>
+                                </div>
+                                <br><br>
+                                <div class="form-group">
+                                    <label for="date_of_bill_scan" class="col-sm-3 control-label">
+                                         Date </label>
+                                    <div class="col-sm-9">
+                                        <input type="text" required class="form-control" id="date_maintenance" name="q3" placeholder="14-03-17" />
+                                    </div>
+                                </div><br><br>
+                                <div class="form-group ">
+                                    <label for="maintenance_item_remarks" class="col-sm-3 control-label">
+                                        Remarks(If any)</label>
+                                    <div class="col-sm-9">
+                                        <textarea class="form-control" rows="5" id="maintenance_item_remarks" name="q4" maxlength="100" style="resize: none; max-height: 75px;"></textarea>
+                                    </div>
+                                </div><br><br>
+                                <div id="maintenance_show_more"></div>
+                                <br><br><button type="submit" id="maintain" class="btn btn-primary" style="float: right; margin-right: 2.5%; font-size: 1em"><span class="glyphicon glyphicon-search"></span> Submit</button><br><br><br>
+  
+</form>
 </div>
-<div id="box_detail4" style="display: none;">
-    Box4
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="box_detail4" style="display: none; padding-left: 2%; margin-top: -5%;" onmouseover="validate_maintenance()">
+    <div class="row" id = "monthly_status">
+        
+        </div>
 </div>
 <div id="box_detail5" style="display: none;">
     Box5
@@ -1669,6 +1741,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec nisl odio
         
     });
     
+    $("#maintain").click(function () {
+        maintenance_item_subitem_name = $("#maintenance_item_subitem_name").val();
+        maintenance_invoice_id = $("#maintenance_invoice_id").val();
+        date_maintenance = $("#date_maintenance").val();
+        maintenance_item_remarks = $("#maintenance_item_remarks").val();
+        
+        $.post("ajaxmaintenance.jsp", {q1: maintenance_item_subitem_name, q2: maintenance_invoice_id, q3: date_maintenance, q4: maintenance_item_remarks}, function(result) {
+        $("#maintenance_show_more").html(result);
+    });
+    });
+    
+    $("#box_detail4").ready(function () {
+        $.post("ajaxMonthlyStatus.jsp", {query_on: "monthly_status"}, function(result) {
+            $("#monthly_status").html(result);
+        });
+    });
     </script>
 
 
