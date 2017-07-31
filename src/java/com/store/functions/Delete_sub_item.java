@@ -51,6 +51,8 @@ public class Delete_sub_item extends HttpServlet {
                     ResultSet rs1;
                     rs1 = ps1.executeQuery();
                     if(rs1.next()){
+                        
+                        
                         String result_subitem_id = rs1.getString(1);
                         String result_subitem_name = rs1.getString(2);
                         String result_item_id_subitem = rs1.getString(3);
@@ -62,9 +64,10 @@ public class Delete_sub_item extends HttpServlet {
                         String result_subitem_placed_at = rs1.getString(9);
                         String result_subitem_incharge_id = rs1.getString(10);
                         String result_subitem_remarks = rs1.getString(11);
+                        String result_subitem_maintenance_date = rs1.getString(12);
 
                         String delete_logs_timestamp_sub_item = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
-                        String delete_logs_id_sub_item = "sub_item_logs_" + result_subitem_id;
+                        String delete_logs_id_sub_item = "sub_item_logs_" ;
                         String delete_logs_description_sub_item = result_subitem_id +" , "+
                         result_subitem_name + " , " +
                         result_item_id_subitem + " , " +
@@ -75,15 +78,17 @@ public class Delete_sub_item extends HttpServlet {
                         result_subitem_alloted_to + " , " +
                         result_subitem_placed_at + " , " +
                         result_subitem_incharge_id + " , " +
-                        result_subitem_remarks;
+                        result_subitem_remarks + " , " +
+                        result_subitem_maintenance_date;
                         String q2 = "INSERT INTO `delete_logs` values ( ? , ? , ? )";
                         PreparedStatement ps2 = connection.prepareStatement(q2);
                         ps2.setString(1, delete_logs_timestamp_sub_item);                    
-                        ps2.setString(2, delete_logs_id_sub_item);
+                        ps2.setString(2, result_subitem_id);
                         ps2.setString(3, delete_logs_description_sub_item); 
                         int x1 = ps2.executeUpdate();
                             if(x1>0){
 
+                                
                                 String q3 = "DELETE FROM `subitem` WHERE `subitem_name`= ? AND `subitem_invoice_id` = ?;";
                                 PreparedStatement ps3 = connection.prepareStatement(q3);
                                 ps3.setString(1, delete_item_sub_name);

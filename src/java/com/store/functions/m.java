@@ -66,12 +66,12 @@ public class m extends HttpServlet {
 
 
 
-                    String query2 = "UPDATE `subitem` SET `maintenance_date` = ? , `item_remarks` = ? WHERE `subitem_name` = ? AND `subitem_invoice_id` = ? ";
+                    String query2 = "UPDATE `subitem` SET `maintenance_date` = curdate() , `item_remarks` = ? WHERE `subitem_name` = ? AND `subitem_invoice_id` = ? ";
                     PreparedStatement ps3 = connection.prepareStatement(query2);
-                        ps3.setString(1, q3);
-                        ps3.setString(2, q4);
-                        ps3.setString(3, q1);
-                        ps3.setString(4, q2);
+                        //ps3.setString(1, q3);
+                        ps3.setString(1, q4);
+                        ps3.setString(2, q1);
+                        ps3.setString(3, q2);
                     int x1 = ps3.executeUpdate();
                         if(x1>0){
                             out.println("<script type=\"text/javascript\">");

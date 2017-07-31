@@ -42,7 +42,7 @@ li:hover{
 .navbar-brand.page-scroll{
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
-    background-color: rgb(0, 179, 0);
+    background-color: #4da6ff;
     color: white;
 }
 
@@ -126,7 +126,7 @@ li:hover{
 .side-nav li a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: #fff;
 }
 
 .side-nav li a:hover {
@@ -252,14 +252,16 @@ li:hover{
 .table_box a{
     padding: 22%;
     text-decoration: none;
-    color:  white;
-    background-color:  rgb(150,150,150);
-    border: 5px solid rgb(200,200,200);
+    color:  #4da6ff;
+    background-color:  rgb(255,255,255);
+    border: 5px solid #4da6ff;
 }
 
 
 .table_box a:hover, .table_box a:focus{
-    background-color:  rgb(100,100,100);
+    background-color:  #4da6ff;
+    color: white;
+    
 }
 
 .table_box li:hover{
@@ -492,7 +494,9 @@ li:hover{
 }
 
 
-
+a.navbar-brand {
+    background: #4da6ff;
+}
 
 
 
@@ -511,7 +515,7 @@ li:hover{
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> <span class="glyphicon glyphicon-align-justify"></span><i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">StoreIcon</a>
+                <a class="navbar-brand page-scroll" href="#page-top">Store</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -529,7 +533,7 @@ li:hover{
                         <a class="page-scroll" href="#XY1">XY1</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="index.html">Logout</a>
+                        <a class="page-scroll" href="index.jsp">Logout</a>
                     </li>
                 </ul>
             </div>
@@ -663,11 +667,11 @@ Basically handling all the jobs related to the addition of items, search, update
 
     <div id="delete_item" class="cart_class"><div style="margin-top: 30%;"><input type="image" src="images/icons/cart(3).png" width="100%" height="100%" alt="Delete Item" data-toggle="modal" data-target="#delete_item_popupmenu"></div><div id="add_item_text" style="text-align: center;">Delete</div></div>
 
-    <div id="add_item" class="cart_class"><div style="margin-top: 30%;"><input type="image" src="images/icons/receipt.png" width="100%" height="100%" alt="Scan Bills" data-toggle="modal" data-target="#scan_bills_popupmenu"></div><div id="add_item_text" style="text-align: center;">Scan Bills</div></div>
+    <!--<div id="add_item" class="cart_class"><div style="margin-top: 30%;"><input type="image" src="images/icons/receipt.png" width="100%" height="100%" alt="Scan Bills" data-toggle="modal" data-target="#scan_bills_popupmenu"></div><div id="add_item_text" style="text-align: center;">Scan Bills</div></div>
 
     <div id="add_item" class="cart_class"><div style="margin-top: 30%;"><input type="image" src="images/icons/pdf.png" width="100%" height="100%" alt="Add Item" data-toggle="modal" data-target="#pdf_bills_popupmenu"></div><div id="add_item_text" style="text-align: center;">.pdf bill</div></div>    
     
-
+    -->
 
 
 

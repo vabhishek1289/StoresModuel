@@ -69,6 +69,7 @@ public class Delete_item extends HttpServlet {
                     String result_item_placed_at = rs.getString(14);
                     String result_item_incharge_id = rs.getString(15);
                     String result_item_remarks = rs.getString(16);
+                    String result_item_maintenance_date = rs.getString(17);
                     
                     //Date date = new Date();
                     //SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy h:mm:ss a");
@@ -89,7 +90,8 @@ public class Delete_item extends HttpServlet {
                             result_item_alloted_to +" , "+
                             result_item_placed_at +" , "+
                             result_item_incharge_id +" , "+
-                            result_item_remarks +" , " ;
+                            result_item_remarks +" , " +
+                            result_item_maintenance_date;
                     String query_delete_logs = "INSERT INTO `delete_logs` values ( ? , ? , ? )";
                     PreparedStatement ps_del = connection.prepareStatement(query_delete_logs);
                     ps_del.setString(1, delete_logs_timestamp);                    
@@ -138,6 +140,7 @@ public class Delete_item extends HttpServlet {
                         String result_subitem_placed_at = rs2.getString(9);
                         String result_subitem_incharge_id = rs2.getString(10);
                         String result_subitem_remarks = rs2.getString(11);
+                        String result_subitem_maintenance_date = rs2.getString(12);
 
                         String delete_logs_timestamp_sub_item = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new java.util.Date());
                         String delete_logs_id_sub_item = "sub_item_logs_" + result_subitem_id;
@@ -151,7 +154,8 @@ public class Delete_item extends HttpServlet {
                         result_subitem_alloted_to + " , " +
                         result_subitem_placed_at + " , " +
                         result_subitem_incharge_id + " , " +
-                        result_subitem_remarks;
+                        result_subitem_remarks + " , " +
+                        result_subitem_maintenance_date;
                         String q3 = "INSERT INTO `delete_logs` values ( ? , ? , ? )";
                         PreparedStatement ps3 = connection.prepareStatement(q3);
                         ps3.setString(1, delete_logs_timestamp_sub_item);                    

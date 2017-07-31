@@ -89,7 +89,7 @@ public class Add_sub_item extends HttpServlet {
                                 //String sub_item_incharge_name_staff_id = rs.getString(1);
                                 
                                 String query = "INSERT INTO `subitem` "                                                
-                                             + "VALUES ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? );";
+                                             + "VALUES ( ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , curdate());";
                 
                                 ps = connection.prepareStatement(query);
                                 ps.setString(1, sub_item_id); 

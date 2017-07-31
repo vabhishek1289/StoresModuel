@@ -46,6 +46,17 @@ public class Add_item extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             
+            /* TODO output your page here. You may use following sample code. 
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet asd</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet asd at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");*/
+            
             Connection connection = SQLConnection.createConnection();
             try {
                 String item_name = request.getParameter("item_name");
@@ -94,7 +105,7 @@ public class Add_item extends HttpServlet {
                         else                    incharge_name_staff_id = rs.getString(1);
                         
                         String query = "INSERT INTO `item` "                                                
-                             + "VALUES (? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? );";
+                             + "VALUES (? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , ? , curdate());";
                 
                         ps = connection.prepareStatement(query);
                         ps.setString(1, id);                    //Completed.

@@ -20,7 +20,7 @@
 <style type="text/css">
 	
 	#page-top{
-		background-image: url("images/login_background.jpg") ;
+		background-image: url("images/login_baackground.png") ;
 	    background-repeat: no-repeat;
     	background-position: right top;
     	background-attachment: fixed;
@@ -36,7 +36,7 @@
 	  height: 834%;
 	  padding: 20px;
 	  background: #fff;
-	  border-radius: 5px;
+	  border-radius: 0px;
 	  overflow: hidden;
 	}
 	.main_login_box:hover > .login_orange_box{
@@ -61,7 +61,7 @@
 	  z-index: 1;
 	  width: 100%;
 	  height: 100%;
-	  background: orange;
+	  background: #4da6ff;
 	  transition: width 0.5s ease-in-out;
 	}
 	.login_orange_box > .text {
@@ -85,30 +85,34 @@
 	  width: 100%;
 	  font-size: 1.8rem;
 	  padding: 0.5rem 1rem;
-	  box-shadow: 5px 5px 5px orange;
 	  border-color: #ccc;
 	  border-width: 0 0 2px 0;
 	  border-radius: 10px;
 	}
 	.login-input:focus {
-	  background-color: rgba(255,153,0,0.9);
+	  background-color: #4da6ff;
 	  color: white;
 	  box-shadow: 5px 5px 5px #888;		
 	}
 
 	.login-btn{
-		width:50px;
-		height:50px;
+		width:60px;
+		height:60px;
 		float :right;
+                text-align: center;
 		margin-top: -3%;
 		margin-right: 5%;
+                background: #4da6ff;
+                color: #fff;
+                border: 0px;
+                font-size: 1.25em;
 		border-radius: 50%;
 		opacity: 0.9;
 	}
 
 	.login-btn:hover{
-		width:60px;
-		height:60px;
+		width:70px;
+		height:70px;
 		transition: all 0.2s ease-in-out;
 	}  
 
@@ -125,7 +129,7 @@
 					<form action="../Login_store" method="POST" enctype="multipart/form-data" class="login-form"><br>
 					<input type="text" name="username_" placeholder="Username" class="login-input"/><br>
 					<input type="password" name="password_" placeholder="Password" class="login-input"/>
-					<br><br><span style="padding:3%"><a href="#forgotpwd">Forgot Password</a></span><input type="image" onclick="login-btn()" class= "login-btn" src="images/icons/unnamed.jpg" alt="Submit">
+					<br><br><span style="padding:3%"><a href="#forgotpwd">Forgot-Password</a></span><input type="submit" onclick="login-btn()" class= "login-btn" Value="Login" alt="Submit">
   					</form>
 					</div>
 				</div>
